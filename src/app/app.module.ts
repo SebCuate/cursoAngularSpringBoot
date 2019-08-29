@@ -7,13 +7,25 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TestcComponent } from './testc/testc.component';
 import { LoginComponent } from './login/login.component';
+import { ErrorComponent } from './error/error.component';
+import { ListTodosComponent } from './list-todos/list-todos.component';
+import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
+import { LogoutComponent } from './logout/logout.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     TestcComponent,
-    LoginComponent
+    LoginComponent,
+    ErrorComponent,
+    ListTodosComponent,
+    MenuComponent,
+    FooterComponent,
+    LogoutComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +34,7 @@ import { LoginComponent } from './login/login.component';
   ],
   providers: [],
   // bootstrap: [AppComponent, WelcomeComponent, TestcComponent, LoginComponent]
-  bootstrap: [AppComponent, LoginComponent]
+  bootstrap: [AppComponent]
+  // bootstrap: [LoginComponent]
 })
 export class AppModule { }

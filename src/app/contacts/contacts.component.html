@@ -1,0 +1,20 @@
+<h1>My Contacts</h1>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Number</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let contact of contacts; let impar = odd; let par = even;" [ngClass]="{azul:par,verde:impar}">
+                <th>{{contact.nombre}}</th>
+                <th><button (click)="call(contact.mobile, contact.nombre)">{{contact.mobile}}</button></th>
+                <th><button (click)="sendEmail(contact.email, contact.nombre)">{{contact.email}}</button></th>
+            </tr>
+        </tbody>
+    </table>
+</div>

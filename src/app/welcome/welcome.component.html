@@ -1,6 +1,16 @@
 <div class="container">
     <h1>Welcome {{username}}!</h1>
-    You can manage your todos<a routerLink="/todos">here</a>
+    You can manage your todos <a routerLink="/todos">here</a>
     <br>
     You can see your contacts <a routerLink="/contacts">here</a>
+</div>
+<br>
+<br>
+<div class="container">
+    <button (click)= "getWelcomeMessage(username)" class="btn btn-success">Click here to get a customized welcome message</button>
+</div>
+
+<div class="container" *ngIf="message">
+    <h1>{{message}}</h1>
+    <button (click)= "clearMessage()" class="btn">Clear message</button>
 </div>

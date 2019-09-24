@@ -12,7 +12,7 @@ export class Todo {
 
 @Component({
   selector: 'app-list-todos',
-  templateUrl: './list-todos.component.html',
+  templateUrl: './list-todos.component.html', 
   styleUrls: ['./list-todos.component.css']
 })
 export class ListTodosComponent implements OnInit {

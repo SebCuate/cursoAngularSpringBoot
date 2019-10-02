@@ -11,7 +11,9 @@ export class HardcodedAuthenticationService {
 
     // console.log('Before ' + this.isUserLoggedIn());
 
-    if(username === "elCuato" && password === "1234"
+    if(
+      (username === "elCuato" && password === "1234") ||
+      (username === "laOrtega" && password === "1234")
       ){
         sessionStorage.setItem('authenticateUser',username);
         // console.log('After ' + this.isUserLoggedIn());
